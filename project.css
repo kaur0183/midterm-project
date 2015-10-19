@@ -1,0 +1,182 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #DDBC6A;
+}
+
+h1 {
+	margin: 10rem 1rem 3rem 1rem;
+	color: #E0BB1D;
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Helvetica Neue', Calibri, Verdana, sans-serif;
+	text-shadow: -1px -1px 2px #74730F, 2px 2px 2px #000;
+}
+
+header.masthead {
+	border: #666;
+	background: url(img/cats.jpg);
+	background-size: cover;
+	height: 400px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.mainnav {
+	color: #BE4E14;
+	background-color: #DDBC6A;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+	color: #BE4E14;
+	text-decoration: none;
+	font-family: Verdana, sans-serif;
+}
+
+nav a:hover,
+a:active {
+	color: #fff;
+}
+
+nav ul {
+	padding: 10px;
+	font-size: 25px;
+}
+
+nav li {
+	display: block;
+	margin: 1rem 1rem 1rem 1rem;
+	text-color: #BE4E14;
+}
+
+h2,
+h3 {
+	color: #031869;
+	margin: 1rem 1rem 0 1rem;
+	font-size: 30px;
+	font-family: Calibri, Verdana, sans-serif;
+}
+
+img.left {
+	float: left;
+	margin: 0 1rem 1rem 1rem;
+	width: 200px;
+	height: 120px
+}
+
+img.right {
+	float: right;
+	margin: 0 1rem 1rem 1rem;
+	width: 200px;
+	height: 120px
+}
+
+p {
+	margin: 1rem 1rem 1rem 1rem;
+}
+
+.content {
+	color: #0486CF;
+	background-color: #98FBFA;
+	font-family: Calibri, sans-serif;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.side {
+	color: #BC070A;
+	background-color: #F4CACA;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.side h3 {
+	color: #800608;
+	font-family: Calibri, Verdana, sans-serif;
+}
+
+.footer {
+	clear: both;
+	color: #1D9905;
+	font-family: 'Helvetica Neue', Verdana;
+	padding: 0.5rem;
+	background-color: #E5FBE7;
+}
+
+@media all and (max-width: 60em) and (min-width: 35em) {
+	h1 {
+		font-size: 4rem;
+	}
+	h3 {
+		font-size: 3rem;
+	}
+	div.wrapper {
+		margin: 0 auto;
+	}
+	nav ul {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+	nav li {
+		display: table-cell;
+		width: 25%;
+		text-align: center;
+	}
+	.content {
+		width: 63%;
+		float: left;
+	}
+	.side {
+		width: 37%;
+		float: right;
+	}
+}
+
+@media all and (min-width: 60em) {
+	h1 {
+		font-size: 5rem;
+	}
+	h2,
+	h3 {
+		font-size: 4rem;
+	}
+	div.wrapper {
+		margin: 0 auto;
+		max-width: 1600px;
+	}
+	nav.mainnav ul {
+		clear: both;
+		float: left;
+		background-color: #DDBC6A;
+		width: 25%;
+		background-image: url("img/cats5.jpg");
+		height: 700px;
+		background-size: 95%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.content {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		-webkit-column-gap: 0;
+		-moz-column-gap: 0;
+		column-gap: 0;
+		width: 50%;
+		float: left;
+		text-align: justify;
+	}
+	.side {
+		width: 25%;
+		float: left;
+		max-width: 1600px;
+	}
+}
